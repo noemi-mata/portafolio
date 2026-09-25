@@ -12,16 +12,18 @@ public class Recursividad {
 			saludo(total -1,nombre);
 		}
 	}*/
-
-	public static void cuentaRegresiva(int n){
-
-		if(n < 1){
-			return;
-		} else {
-			System.out.println(n + " ");
-			cuentaRegresiva(n-1);
-		}
-	}
+	
+	/**
+	*public static void cuentaRegresiva(int n){
+	*
+	*	if(n < 1){
+	*		return;
+	*	} else {
+	*		System.out.println(n + " ");
+	*		cuentaRegresiva(n-1);
+	*	}
+	*}
+	*/
 
 	/**
 	*Funcion que realiza cuenta regresiva de acuerdo a un 
@@ -29,6 +31,16 @@ public class Recursividad {
 	*Fecha: 25 de Septiembre
 	*Autor: Noemi Mata
 	*/
+	
+	public static int sumaRecursiva(int[] datos, int longitud){
+    		if(longitud == datos.length){ //La longitud va a ser igual que los datos que se ingresaron
+        		return 0;   // Caso base
+    		} else {
+        		return datos[longitud] + sumaRecursiva(datos, longitud + 1); //Sumamos
+  		}
+	}
+
+
 	public static void main(String[] args){
 		//Scanner sc = new Scanner(System.in);
 
@@ -36,6 +48,10 @@ public class Recursividad {
         	//String nombre = sc.nextLine(); 
 		//saludo(10, nombre);
 
-		cuentaRegresiva(100);
+		//cuentaRegresiva(100);
+
+		int[] datos = {3,4,5,6,7,8}; //Le di numeros al datos
+    		int suma = sumaRecursiva(datos, 0); //Cree la variable suma
+    		System.out.println("La suma es: " + suma); //Imprimi la suma
 	}
 }
