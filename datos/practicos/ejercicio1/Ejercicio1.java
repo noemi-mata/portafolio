@@ -1,4 +1,6 @@
 //Noemi Mata Ruiz
+//Ejercicio B 
+//Tema de Arreglos
 
 public class Ejercicio1{
 
