@@ -1,3 +1,5 @@
+//Noemi Mata Ruiz
+
 public class Ejercicio1{
 
 	static int K = 2; // <-- Ultimo digito de mi matricula es: 1 + 1 = 2
